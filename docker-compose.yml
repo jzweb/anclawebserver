@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ancla-server:
+    build: .
+    volumes:
+      - /app/node_modules
+      - .:/app
+    ports:
+      - "2000:3000"
